@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Borobudur Temple",
+    "location": "Magelang",
+    "category": "Historical",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1620549146396-9024d914cd99?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Qk9ST0JVRFVSfGVufDB8fDB8fHww",
+    "description": "The largest Buddhist temple in the world.",
+    "details": {
+      "entryFee": 50000,
+      "rating": 4.9,
+      "facilities": ["Parking", "Guide", "Toilet"],
+      "officialWebsite": "https://injourneydestination.id/destinations/borobudur/"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Raja Ampat",
+    "location": "West Papua",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1702664045144-8c97b3034d26?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmFqYSUyMGFtcGF0fGVufDB8fDB8fHww",
+    "description": "Heaven for divers and nature lovers.",
+    "details": {
+      "entryFee": 500000,
+      "rating": 5.0,
+      "facilities": ["Diving", "Resort", "Boat"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Kabupaten_Raja_Ampat"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Mount Bromo",
+    "location": "East Java",
+    "category": "Nature",
+    "status": "Closed",
+    "image": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=600&q=80",
+    "description": "Famous volcano with iconic sunrise.",
+    "details": {
+      "entryFee": 35000,
+      "rating": 4.8,
+      "facilities": ["Jeep", "Horse", "Food"],
+      "officialWebsite": "https://www.bromo.co.id/"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Labuan Bajo",
+    "location": "NTT",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1619880889144-d6e252999afa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFidWhhbiUyMGJham98ZW58MHx8MHx8fDA%3D",
+    "description": "Home to the Komodo Dragon.",
+    "details": {
+      "entryFee": 200000,
+      "rating": 4.9,
+      "facilities": ["Snorkeling", "Cruise", "Island Hopping"],
+      "officialWebsite": "https://www.indonesia.travel/id/id/destination/bali-nusa-tenggara/east-nusa-tenggara/labuan-bajo/"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Lawang Sewu",
+    "location": "Semarang",
+    "category": "Historical",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1651890053473-b25f7e1672dd?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGF3YW5nJTIwc2V3dXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Historic building with a thousand doors.",
+    "details": {
+      "entryFee": 20000,
+      "rating": 4.5,
+      "facilities": ["History Tour", "Photo Spot", "Canteen"],
+      "officialWebsite": "https://kaiwisata.id/Lawang-Sewu"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Uluwatu Temple",
+    "location": "Bali",
+    "category": "Culture",
+    "status": "Open",
+    "image": "https://images.unsplash.com/flagged/photo-1565065550129-9d08baa3e42c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dWx1d2F0dSUyMHRlbXBsZXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Cliff-side temple with Kecak dance performance.",
+    "details": {
+      "entryFee": 30000,
+      "rating": 4.7,
+      "facilities": ["Culture Show", "Sunset View", "Monkeys"],
+      "officialWebsite": "https://en.wikipedia.org/wiki/Uluwatu,_Bali"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Tana Toraja",
+    "location": "South Sulawesi",
+    "category": "Culture",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1727672100642-c8e8dfa7dca3?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFuYSUyMHRvcmFqYXxlbnwwfHwwfHx8MA%3D%3D",
+    "description": "Unique funeral traditions and houses.",
+    "details": {
+      "entryFee": 40000,
+      "rating": 4.6,
+      "facilities": ["Local Guide", "Museum", "Homestay"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Kabupaten_Tana_Toraja"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Wakatobi",
+    "location": "Sultra",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80",
+    "description": "World-class underwater biodiversity.",
+    "details": {
+      "entryFee": 150000,
+      "rating": 4.9,
+      "facilities": ["Diving", "Resort", "Education Center"],
+      "officialWebsite": "https://wakatobinationalpark.id/"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Lake Toba",
+    "location": "North Sumatra",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1516132006923-6cf348e5dee2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFrZSUyMHRvYmF8ZW58MHx8MHx8fDA%3D",
+    "description": "Largest volcanic lake in the world.",
+    "details": {
+      "entryFee": 10000,
+      "rating": 4.7,
+      "facilities": ["Boat", "Cottage", "Water Sport"],
+      "officialWebsite": "https://www.indonesia.travel/id/id/destination/sumatra/north-sumatra/lake-toba/"
+    }
+  },
+  {
+    "id": 10,
+    "name": "National Museum",
+    "location": "Jakarta",
+    "category": "Historical",
+    "status": "Closed",
+    "image": "https://images.unsplash.com/photo-1688701035915-ad0399f05667?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0aW9uYWwlMjBtdXNldW0lMjBpbmRvbmVzaWF8ZW58MHx8MHx8fDA%3D",
+    "description": "History and heritage of Indonesia.",
+    "details": {
+      "entryFee": 15000,
+      "rating": 4.4,
+      "facilities": ["Library", "Cafe", "Audio Guide"],
+      "officialWebsite": "https://www.museumnasional.or.id/"
+    }
+  },
+  {
+    "id": 11,
+    "name": "Prambanan",
+    "location": "Yogyakarta",
+    "category": "Historical",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1597133541155-8f2f9da143a6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJhbWJhbmFufGVufDB8fDB8fHww",
+    "description": "Beautiful Hindu temple complex.",
+    "details": {
+      "entryFee": 50000,
+      "rating": 4.8,
+      "facilities": ["Ramayana Ballet", "Cycle Hire", "Souvenir"],
+      "officialWebsite": "https://injourneydestination.id/destinations/prambanan/"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Tanah Lot",
+    "location": "Bali",
+    "category": "Culture",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1539367628448-4bc5c9d171c8?auto=format&fit=crop&w=600&q=80",
+    "description": "Temple on a rock offshore.",
+    "details": {
+      "entryFee": 60000,
+      "rating": 4.7,
+      "facilities": ["Ocean View", "Market", "Temple Tour"],
+      "officialWebsite": "https://www.tanahlot.id/"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Bunaken",
+    "location": "Manado",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1582967788606-a171c1080cb0?auto=format&fit=crop&w=600&q=80",
+    "description": "Spectacular coral reefs.",
+    "details": {
+      "entryFee": 50000,
+      "rating": 4.8,
+      "facilities": ["Diving", "Snorkeling", "Glass Boat"],
+      "officialWebsite": "https://tn-bunaken.com/"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Derawan",
+    "location": "East Kalimantan",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?auto=format&fit=crop&w=600&q=80",
+    "description": "Swim with stingless jellyfish.",
+    "details": {
+      "entryFee": 100000,
+      "rating": 4.9,
+      "facilities": ["Speedboat", "Villa", "Turtle Watching"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Kepulauan_Derawan"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Garuda Wisnu Kencana",
+    "location": "Bali",
+    "category": "Culture",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1678704545122-ae40f39f8ed1?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Z2FydWRhJTIwd2lzbnV8ZW58MHx8MHx8fDA%3D",
+    "description": "Massive cultural park and statue.",
+    "details": {
+      "entryFee": 125000,
+      "rating": 4.6,
+      "facilities": ["Dance Show", "Shuttle", "Exhibition"],
+      "officialWebsite": "https://www.gwkbali.com/"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Kuta Beach",
+    "location": "Bali",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1551008475-4533d141425b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8a3V0YSUyMGJlYWNofGVufDB8fDB8fHww",
+    "description": "Most popular sunset beach.",
+    "details": {
+      "entryFee": 0,
+      "rating": 4.5,
+      "facilities": ["Surfing", "Bar", "Shopping"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Pantai_Kuta"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Tangkuban Perahu",
+    "location": "Bandung",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1631005441185-0cdb5fe1b126?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGFuZ2t1YmFuJTIwcGVyYWh1fGVufDB8fDB8fHww",
+    "description": "Unique boat-shaped crater.",
+    "details": {
+      "entryFee": 30000,
+      "rating": 4.4,
+      "facilities": ["Crater Walk", "Market", "Parking"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Gunung_Tangkuban_Parahu"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Gili Trawangan",
+    "location": "Lombok",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&q=80",
+    "description": "No motorized vehicles, pure bliss.",
+    "details": {
+      "entryFee": 0,
+      "rating": 4.8,
+      "facilities": ["Bicycle", "Diving", "Night Market"],
+      "officialWebsite": "https://id.wikipedia.org/wiki/Gili_Trawangan"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Semarang Old Town",
+    "location": "Semarang",
+    "category": "Historical",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1641537900953-e864e263c348?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8a290YSUyMHR1YSUyMHNlbWFyYW5nfGVufDB8fDB8fHww",
+    "description": "Little Netherlands in Java.",
+    "details": {
+      "entryFee": 0,
+      "rating": 4.6,
+      "facilities": ["Museum", "Cafe", "Art Gallery"],
+      "officialWebsite": "https://indonesiavirtualtour.com/wisata-virtual/kota-lama-semarang"
+    }
+  },
+  {
+    "id": 20,
+    "name": "Way Kambas",
+    "location": "Lampung",
+    "category": "Nature",
+    "status": "Open",
+    "image": "https://images.unsplash.com/photo-1581852017103-68ac65514cf7?auto=format&fit=crop&w=600&q=80",
+    "description": "Elephant conservation center.",
+    "details": {
+      "entryFee": 20000,
+      "rating": 4.5,
+      "facilities": ["Elephant Show", "Safari", "Lodging"],
+      "officialWebsite": "https://tnwaykambas.org/"
+    }
+  }
+]
