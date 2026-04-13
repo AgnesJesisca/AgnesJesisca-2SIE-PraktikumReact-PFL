@@ -3,7 +3,7 @@ import { FcAreaChart } from "react-icons/fc";
 import { SlSettings } from "react-icons/sl";
 
 export default function Header() {
-    // IMPROVISASI 1: Fungsi Greeting berdasarkan waktu real-time
+    // IMPROVISASI 1
     const getGreeting = () => {
         const hour = new Date().getHours();
         if (hour < 12) return "Good Morning";
@@ -49,7 +49,6 @@ export default function Header() {
 
                 <div id="profile-container" className="flex items-center space-x-4 border-l pl-4 border-gray-300">
                     <span id="profile-text" className="text-sm">
-                        {/* Penerapan Improvisasi Greeting */}
                         {getGreeting()}, <b className="text-gray-900">Agnes Jesisca</b>
                     </span>
                     <img

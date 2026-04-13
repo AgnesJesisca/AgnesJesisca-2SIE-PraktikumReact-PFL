@@ -1,9 +1,9 @@
 export default function PageHeader() {
     return (
-        /* 2️⃣ Terapkan layout dan flexbox untuk div pageheader-container */
+        
         <div id="pageheader-container" className="flex items-center justify-between p-4">
             
-            {/* 3️⃣ Styling untuk Sisi Kiri (Title & Breadcrumb) */}
+            {/*Sisi Kiri (Title & Breadcrumb) */}
             <div id="pageheader-left" className="flex flex-col">
                 <span id="pageheader-title" className="text-3xl font-semibold">
                     Dashboard
@@ -22,7 +22,7 @@ export default function PageHeader() {
                 </div>
             </div>
 
-            {/* 4️⃣ Styling untuk Sisi Kanan (Action Button) */}
+            {/* Sisi Kanan (Action Button) */}
             <div id="action-button">
                 <button id="add-button" className="bg-hijau text-white px-4 py-2 rounded-lg">
                     + Add Button

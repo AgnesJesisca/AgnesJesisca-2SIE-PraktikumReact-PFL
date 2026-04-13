@@ -8,7 +8,7 @@ export default function Dashboard() {
 
             <div id="dashboard-grid" className="p-5 grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                 
-                {/* IMPROVISASI 2: Card dengan Target Progress Bar */}
+                {/* IMPROVISASI 2 */}
                 <div id="dashboard-orders" className="flex flex-col bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow border-b-4 border-hijau">
                     <div className="flex items-center space-x-5 mb-3">
                         <div id="orders-icon" className="bg-hijau rounded-full p-4">
@@ -26,7 +26,7 @@ export default function Dashboard() {
                     <p className="text-[10px] text-gray-400 mt-1">65% from monthly target</p>
                 </div>
 
-                {/* IMPROVISASI 3: Card dengan Trend Indicator */}
+                {/* IMPROVISASI 3*/}
                 <div id="dashboard-delivered" className="flex flex-col bg-white rounded-lg shadow-md p-4 hover:shadow-xl transition-shadow">
                     <div className="flex justify-between items-start mb-2">
                         <div id="delivered-icon" className="bg-blue-500 rounded-full p-4">
