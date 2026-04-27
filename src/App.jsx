@@ -1,10 +1,10 @@
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
-import Dashboard from "./pages/Dashboard";
-import Orders from "./pages/Orders";
-import Customers from "./pages/Customers";
+import Dashboard from "./pages/main/Dashboard";
+import Orders from "./pages/main/Orders";
+import Customers from "./pages/main/Customers";
 import { Routes, Route } from "react-router-dom";
-import ErrorPage from "./pages/ErrorPage";
+import ErrorPage from "./pages/main/ErrorPage";
 import "./assets/tailwind.css";
 import { MainLayout } from "./layouts/MainLayout";
 import AuthLayout from "./layouts/AuthLayout";
