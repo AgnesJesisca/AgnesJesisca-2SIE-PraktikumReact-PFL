@@ -8,7 +8,7 @@ export default function Dashboard() {
       <div className="p-5 space-y-5">
 
         <PageHeader 
-          title="Dashboard" 
+          title="Dashboard - Agnes Jesisca 🚀" 
           breadcrumb="Dashboard"
         />
 

@@ -1,4 +1,4 @@
-import { MdDashboard, MdAssignment, MdPeople, MdAdd } from "react-icons/md";
+import { MdDashboard, MdAssignment, MdPeople, MdAdd, MdInventory } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
@@ -27,58 +27,55 @@ export default function Sidebar() {
       <div className="mt-10">
         <ul className="space-y-3">
 
-          <li>
-            <NavLink 
-              id="menu-1"
-              to="/" 
-              className={menuClass}
-            >
-              <MdDashboard className="mr-4 text-xl" />
-              <span>Dashboard</span>
-            </NavLink>
-          </li>
+        <li>
+          <NavLink to="/" className={menuClass}>
+            <MdDashboard className="mr-4 text-xl" />
+            <span>Dashboard</span>
+          </NavLink>
+        </li>
 
-          <li>
-            <NavLink 
-              id="menu-2"
-              to="/orders" 
-              className={menuClass}
-            >
-              <MdAssignment className="mr-4 text-xl" />
-              <span>Orders</span>
-            </NavLink>
-          </li>
+        <li>
+          <NavLink to="/orders" className={menuClass}>
+            <MdAssignment className="mr-4 text-xl" />
+            <span>Orders</span>
+          </NavLink>
+        </li>
 
-          <li>
-            <NavLink 
-              id="menu-3"
-              to="/customers" 
-              className={menuClass}
-            >
-              <MdPeople className="mr-4 text-xl" />
-              <span>Customers</span>
-            </NavLink>
+        <li>
+          <NavLink to="/customers" className={menuClass}>
+            <MdPeople className="mr-4 text-xl" />
+            <span>Customers</span>
+          </NavLink>
+        </li>
 
-            <li>
-              <NavLink to="/400" className={menuClass}>
-                Delivery
-              </NavLink>
-            </li>
+        {/* 🔥 TAMBAHAN PRODUCTS */}
+        <li>
+          <NavLink to="/products" className={menuClass}>
+            <MdInventory className="mr-4 text-xl" />
+            <span>Products</span>
+          </NavLink>
+        </li>
 
-            <li>
-              <NavLink to="/401" className={menuClass}>
-                Canceled
-              </NavLink>
-            </li>
+        {/* Menu lain */}
+        <li>
+          <NavLink to="/400" className={menuClass}>
+            Delivery
+          </NavLink>
+        </li>
 
-            <li>
-              <NavLink to="/403" className={menuClass}>
-                Income
-              </NavLink>
-            </li>
-          </li>
+        <li>
+          <NavLink to="/401" className={menuClass}>
+            Canceled
+          </NavLink>
+        </li>
 
-        </ul>
+        <li>
+          <NavLink to="/403" className={menuClass}>
+            Income
+          </NavLink>
+        </li>
+
+      </ul>
       </div>
 
       {/* Footer */}

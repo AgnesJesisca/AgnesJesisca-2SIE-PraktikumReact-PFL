@@ -1,0 +1,36 @@
+[
+  { "code": 1, "title": "Essence Mascara Lash Princess", "category": "beauty", "brand": "Essence", "price": 99, "stock": 10 },
+  { "code": 2, "title": "Eyeshadow Palette with Mirror", "category": "beauty", "brand": "Glam", "price": 120, "stock": 8 },
+  { "code": 3, "title": "Powder Canister", "category": "beauty", "brand": "Glow", "price": 80, "stock": 12 },
+  { "code": 4, "title": "Red Lipstick", "category": "beauty", "brand": "Maybelline", "price": 75, "stock": 15 },
+  { "code": 5, "title": "Face Serum Vitamin C", "category": "beauty", "brand": "Skintific", "price": 150, "stock": 9 },
+  { "code": 6, "title": "Moisturizer Cream", "category": "beauty", "brand": "Wardah", "price": 95, "stock": 14 },
+  { "code": 7, "title": "Sunscreen SPF 50", "category": "beauty", "brand": "Azarine", "price": 110, "stock": 11 },
+  { "code": 8, "title": "Foundation Matte", "category": "beauty", "brand": "Make Over", "price": 135, "stock": 7 },
+  { "code": 9, "title": "Blush On Pink", "category": "beauty", "brand": "Emina", "price": 65, "stock": 13 },
+  { "code": 10, "title": "Lip Tint Korean", "category": "beauty", "brand": "Innisfree", "price": 105, "stock": 10 },
+
+  { "code": 11, "title": "Coffee Arabica Beans", "category": "beverage", "brand": "Starbucks", "price": 200, "stock": 20 },
+  { "code": 12, "title": "Matcha Powder Premium", "category": "beverage", "brand": "Matchamu", "price": 180, "stock": 16 },
+  { "code": 13, "title": "Chocolate Drink Mix", "category": "beverage", "brand": "Milo", "price": 70, "stock": 25 },
+  { "code": 14, "title": "Milk Fresh 1L", "category": "beverage", "brand": "Ultra Milk", "price": 60, "stock": 18 },
+  { "code": 15, "title": "Caramel Syrup", "category": "beverage", "brand": "Torani", "price": 130, "stock": 9 },
+
+  { "code": 16, "title": "Croissant Butter", "category": "food", "brand": "BreadTalk", "price": 45, "stock": 30 },
+  { "code": 17, "title": "Cheese Cake Slice", "category": "food", "brand": "Holland Bakery", "price": 55, "stock": 22 },
+  { "code": 18, "title": "Chocolate Muffin", "category": "food", "brand": "Starbucks", "price": 50, "stock": 28 },
+  { "code": 19, "title": "Sandwich Tuna", "category": "food", "brand": "Subway", "price": 65, "stock": 17 },
+  { "code": 20, "title": "French Fries", "category": "food", "brand": "McD", "price": 40, "stock": 35 },
+
+  { "code": 21, "title": "Espresso Machine", "category": "equipment", "brand": "Breville", "price": 5000, "stock": 3 },
+  { "code": 22, "title": "Coffee Grinder", "category": "equipment", "brand": "Delonghi", "price": 2500, "stock": 5 },
+  { "code": 23, "title": "Milk Frother", "category": "equipment", "brand": "Philips", "price": 900, "stock": 6 },
+  { "code": 24, "title": "Blender Smoothie", "category": "equipment", "brand": "Miyako", "price": 700, "stock": 8 },
+  { "code": 25, "title": "Cup Coffee 12oz", "category": "equipment", "brand": "Generic", "price": 10, "stock": 100 },
+
+  { "code": 26, "title": "Green Tea Bottle", "category": "beverage", "brand": "Teh Pucuk", "price": 15, "stock": 40 },
+  { "code": 27, "title": "Mineral Water 600ml", "category": "beverage", "brand": "Aqua", "price": 8, "stock": 60 },
+  { "code": 28, "title": "Ice Cream Vanilla", "category": "food", "brand": "Walls", "price": 25, "stock": 33 },
+  { "code": 29, "title": "Donut Chocolate", "category": "food", "brand": "JCO", "price": 20, "stock": 27 },
+  { "code": 30, "title": "Cupcake Strawberry", "category": "food", "brand": "BreadTalk", "price": 30, "stock": 19 }
+]
