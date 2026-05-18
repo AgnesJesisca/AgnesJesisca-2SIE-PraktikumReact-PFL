@@ -56,22 +56,29 @@ export default function Sidebar() {
           </NavLink>
         </li>
 
+        <li>
+          <NavLink to="/components" className={menuClass}>
+            <MdAdd className="mr-4 text-xl" />
+            <span>Components</span>
+          </NavLink>
+        </li>
+
         {/* Menu lain */}
         <li>
           <NavLink to="/400" className={menuClass}>
-            Delivery
+            400
           </NavLink>
         </li>
 
         <li>
           <NavLink to="/401" className={menuClass}>
-            Canceled
+            401
           </NavLink>
         </li>
 
         <li>
           <NavLink to="/403" className={menuClass}>
-            Income
+            403
           </NavLink>
         </li>
 

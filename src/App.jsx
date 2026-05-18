@@ -17,7 +17,7 @@ const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
 const Loading = React.lazy(() => import("./components/Loading"));
 const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"))
 const Products = React.lazy(() => import("./pages/main/Products"));
-
+const Components = React.lazy(() => import("./pages/main/Components"));
 
 
 function App() {
@@ -30,7 +30,8 @@ function App() {
       <Route path="/customers" element={<Customers />} />
       <Route path="/products" element={<Products />} />
       <Route path="/products/:id" element={<ProductDetail />} />
-
+      <Route path="/components" element={<Components />} />
+      
       <Route path="/400" element={<ErrorPage code="400" message="Bad Request" />} />
       <Route path="/401" element={<ErrorPage code="401" message="Unauthorized" />} />
       <Route path="/403" element={<ErrorPage code="403" message="Forbidden" />} />

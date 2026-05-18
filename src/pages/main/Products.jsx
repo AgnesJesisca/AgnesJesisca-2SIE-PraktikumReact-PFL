@@ -6,7 +6,7 @@ export default function Products() {
   return (
     <div className="flex-1 bg-gray-50 min-h-screen p-5">
       <PageHeader title="Products" breadcrumb="Dashboard / Product List" />
-
+      
       <div className="bg-white rounded-lg shadow mt-5">
         <table className="w-full text-left">
           <thead className="bg-emerald-600 text-white">
