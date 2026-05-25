@@ -63,6 +63,13 @@ export default function Sidebar() {
           </NavLink>
         </li>
 
+        <li>
+          <NavLink to="/fiturxyz" className={menuClass}>
+            <MdAdd className="mr-4 text-xl" />
+            <span>FiturXyz</span>
+          </NavLink>
+        </li>
+
         {/* Menu lain */}
         <li>
           <NavLink to="/400" className={menuClass}>
@@ -81,6 +88,8 @@ export default function Sidebar() {
             403
           </NavLink>
         </li>
+
+
 
       </ul>
       </div>
