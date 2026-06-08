@@ -70,6 +70,13 @@ export default function Sidebar() {
           </NavLink>
         </li>
 
+              <li>
+          <NavLink to="/notes" className={menuClass}>
+            <MdAdd className="mr-4 text-xl" />
+            <span>Notes</span>
+          </NavLink>
+        </li>
+
         {/* Menu lain */}
         <li>
           <NavLink to="/400" className={menuClass}>

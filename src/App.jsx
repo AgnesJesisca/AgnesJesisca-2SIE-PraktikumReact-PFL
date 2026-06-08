@@ -19,6 +19,7 @@ const ProductDetail = React.lazy(() => import("./pages/main/ProductDetail"))
 const Products = React.lazy(() => import("./pages/main/Products"));
 const Components = React.lazy(() => import("./pages/main/Components"));
 const FiturXyz = React.lazy(() => import("./pages/main/FiturXyz"));
+const Note = React.lazy(() => import("./pages/main/Note"));
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <Route path="/products/:id" element={<ProductDetail />} />
       <Route path="/components" element={<Components />} />
       <Route path="/fiturxyz" element={<FiturXyz />} />
+      <Route path="/notes" element={<Note />} />
       
       <Route path="/400" element={<ErrorPage code="400" message="Bad Request" />} />
       <Route path="/401" element={<ErrorPage code="401" message="Unauthorized" />} />
