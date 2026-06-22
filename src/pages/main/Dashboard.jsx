@@ -1,7 +1,44 @@
 import { FaShoppingCart, FaTruck, FaBan, FaDollarSign } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase";
 import PageHeader from "../../components/PageHeader";
 
 export default function Dashboard() {
+  const [stats, setStats] = useState({
+    totalOrders: 0,
+    totalDelivered: 0,
+    totalCanceled: 0,
+    totalRevenue: 0,
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const { data: orders } = await supabase
+          .from('orders')
+          .select('total_final, status');
+
+        if (orders) {
+          setStats({
+            totalOrders: orders.length,
+            totalDelivered: orders.filter(o => o.status === 'completed').length,
+            totalCanceled: orders.filter(o => o.status === 'cancelled').length,
+            totalRevenue: orders
+              .filter(o => o.status === 'completed')
+              .reduce((sum, o) => sum + Number(o.total_final), 0),
+          });
+        }
+      } catch (err) {
+        console.error('Error fetching stats:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
   return (
     <div className="flex-1 bg-gray-50 min-h-screen">
       
@@ -19,7 +56,7 @@ export default function Dashboard() {
               <FaShoppingCart className="text-3xl text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold">75</span>
+              <span className="text-2xl font-bold">{stats.totalOrders}</span>
               <span className="text-gray-400">Total Orders</span>
             </div>
           </div>
@@ -29,7 +66,7 @@ export default function Dashboard() {
               <FaTruck className="text-3xl text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold">175</span>
+              <span className="text-2xl font-bold">{stats.totalDelivered}</span>
               <span className="text-gray-400">Total Delivered</span>
             </div>
           </div>
@@ -39,7 +76,7 @@ export default function Dashboard() {
               <FaBan className="text-3xl text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold">40</span>
+              <span className="text-2xl font-bold">{stats.totalCanceled}</span>
               <span className="text-gray-400">Total Canceled</span>
             </div>
           </div>
@@ -49,7 +86,7 @@ export default function Dashboard() {
               <FaDollarSign className="text-3xl text-white" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-bold">Rp.128</span>
+              <span className="text-2xl font-bold">Rp.{stats.totalRevenue.toLocaleString()}</span>
               <span className="text-gray-400">Total Revenue</span>
             </div>
           </div>

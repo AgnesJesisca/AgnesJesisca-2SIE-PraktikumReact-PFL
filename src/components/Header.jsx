@@ -1,8 +1,10 @@
-import { FaBell, FaSearch } from "react-icons/fa";
+import { FaBell, FaSearch, FaSignOutAlt } from "react-icons/fa";
 import { FcAreaChart } from "react-icons/fc";
 import { SlSettings } from "react-icons/sl";
+import { useAuth } from "@/contexts/AuthContext";
 
 export default function Header() {
+    const { signOut, profile } = useAuth();
     return (
         /* 2️⃣ Terapkan layout dan flexbox untuk div header-container */
         <div id="header-container" className="flex justify-between items-center p-4">
@@ -49,7 +51,7 @@ export default function Header() {
                 {/* 4️⃣ Profile Section */}
                 <div id="profile-container" className="flex items-center space-x-4 border-l pl-4 border-gray-300">
                     <span id="profile-text" className="text-sm">
-                        Hello, <b className="text-gray-900">Agnes Jesisca</b>
+                        Hello, <b className="text-gray-900">{profile?.full_name || 'User'}</b>
                     </span>
                     <img
                         id="profile-avatar"
@@ -57,6 +59,13 @@ export default function Header() {
                         className="w-10 h-10 rounded-full"
                         alt="Profile"
                     />
+                    <button
+                        onClick={signOut}
+                        className="p-2 text-red-500 hover:bg-red-50 rounded-lg transition"
+                        title="Logout"
+                    >
+                        <FaSignOutAlt />
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,8 +1,41 @@
-import products from "../../data/Products.json";
+import { useState, useEffect } from "react";
+import { supabase } from "@/lib/supabase";
 import { Link } from "react-router-dom";
 import PageHeader from "../../components/PageHeader";
 
 export default function Products() {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('products')
+          .select('*')
+          .order('created_at', { ascending: false });
+
+        if (!error && data) {
+          setProducts(data);
+        }
+      } catch (err) {
+        console.error('Error fetching products:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex-1 bg-gray-50 min-h-screen flex items-center justify-center">
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex-1 bg-gray-50 min-h-screen p-5">
       <PageHeader title="Products" breadcrumb="Dashboard / Product List" />
@@ -13,8 +46,7 @@ export default function Products() {
             <tr>
               <th className="px-6 py-3">#</th>
               <th className="px-6 py-3">Name</th>
-              <th className="px-6 py-3">Category</th>
-              <th className="px-6 py-3">Brand</th>
+              <th className="px-6 py-3">Description</th>
               <th className="px-6 py-3">Price</th>
               <th className="px-6 py-3">Stock</th>
             </tr>
@@ -22,22 +54,21 @@ export default function Products() {
 
           <tbody>
             {products.map((item, index) => (
-              <tr key={item.code} className="border-t">
+              <tr key={item.id} className="border-t">
                 <td className="px-6 py-4">{index + 1}</td>
 
-                {/* 🔥 LINK KE DETAIL */}
+                {/* LINK KE DETAIL */}
                 <td className="px-6 py-4">
                   <Link
-                    to={`/products/${item.code}`}
+                    to={`/products/${item.id}`}
                     className="text-emerald-500 hover:underline"
                   >
-                    {item.title}
+                    {item.name}
                   </Link>
                 </td>
 
-                <td className="px-6 py-4">{item.category}</td>
-                <td className="px-6 py-4">{item.brand}</td>
-                <td className="px-6 py-4">Rp {item.price * 1000}</td>
+                <td className="px-6 py-4 text-gray-500 max-w-xs truncate">{item.description || '-'}</td>
+                <td className="px-6 py-4">Rp {Number(item.price).toLocaleString()}</td>
                 <td className="px-6 py-4">{item.stock}</td>
               </tr>
             ))}
